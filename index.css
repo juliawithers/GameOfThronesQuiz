@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url("throne.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+}
+.logo > img{
+    margin-top: 5px;     
+}
+h1{
+    text-align: center;
+    font-size: 2em;
+}
+section{
+    width: 50%;
+    margin: 15px auto 15px auto;
+    border:  1px solid black;
+    border-radius: 5px;
+    background-color:  rgb(185, 185, 185);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+button{
+    margin: 10px auto 10px auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 115%;
+}
+fieldset{
+    text-align: left;
+    border: none;
+}
+fieldset >label{
+    font-size: 115%;
+    padding: 10px auto 10px auto;
+}
+
+p.question-count{
+    display: inline-block;
+    padding-right: 30px; 
+}
+p.score{
+    display: inline-block;
+    padding-left: 30px; 
+}
