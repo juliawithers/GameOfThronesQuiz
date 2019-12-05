@@ -37,4 +37,5 @@ const STORE=[
             "Rhaegal",
             "Viserion",
             "Vhagar"],
-        answer: "Vhagar"}];
+        answer: "Vhagar"
+    }];
