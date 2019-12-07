@@ -70,8 +70,10 @@ p.score{
     padding: 0px;
 }
 .options{
+    padding-right: 20%;
     padding-left: 20%;
 }
+
 .options>span{
     display: block;
     padding: 3px;
@@ -94,6 +96,9 @@ p.score{
     color: white;
 }
 @media screen and (min-width: 620px){
+    /* main{
+        width: 40%;
+    } */
     p.question-count{
         padding-right: 10%;
         padding-left: 10%; 
@@ -105,6 +110,6 @@ p.score{
 }
 @media screen and (min-width: 1000px){
     main{
-        flex-grow: 0;
+        width: 35%;
     }
 }

@@ -27,8 +27,8 @@ function createQuestion(){
     updateScore(); //call to load the initial score
     const questionHTML = 
     `<form>
-    <fieldset>
-        <h1>${question}</h1>
+    <fieldset class = "field">
+        <h2>${question}</h2>
         <div class = "options">
         </div>
     </fieldset>
@@ -45,9 +45,9 @@ function createQuestion(){
 function createSelections(){
     let currentSelections = STORE[curIndex].selections;
     for (let i=0; i<currentSelections.length;i++){
-    $(".options").append(`<input class = "radio-input" type="radio" name = "selections" value = "${currentSelections[i]}" >
+    $(".options").append(`<input class = "radio-input" type="radio" name = "selections" value = "${currentSelections[i]}"  id = "selections${i}">
     <label class = "radio" for ="selections${i}">${currentSelections[i]}</label><br>
-    <span id = "selections${i}"></span>`);
+    <span id = "selection${i}"></span>`);
     }
     questionCheck();
 }
@@ -59,29 +59,32 @@ function questionCheck(){
     $('.submit').on('click',function(event){
         $('.submit').hide();
         $('.next').show();
-        $('.radio-input').prop('disabled', true);
         event.preventDefault();
         console.log(curIndex)
         let currentSelection = $('input[name="selections"]:checked').val();
 
         if (!currentSelection){
             alert('All men must answer.')
+            $('.submit').show();
+            $('.next').hide();
+            return;
         }
+        $('.radio-input').prop('disabled', true);
         // answerId is the location of the selected answer
         let answerId = STORE[curIndex].selections.findIndex(i=> i === currentSelection);
         // create a variable for the ID of the selected answer span element
-        let id = '#selections'+answerId;
+        let id = '#selection'+answerId;
         if (currentSelection === STORE[curIndex].answer){
             // correct
             $(`${id}`).append(`That is correct!<br>`);
             $(`${id}`).addClass('correctAnswer'); //to be able to edit the boxes in css
-            console.log('.selections'+answerId)
+            console.log('.selection'+answerId)
             score++;
             updateScore();
             curIndex++;
         }
         else{
-        // incorrect
+            // incorrect
             console.log('incorrect')
             $(`${id}`).append(`That is not correct. The correct answer is ${STORE[curIndex].answer}<br>`);
             $(`${id}`).addClass('wrongAnswer');//to be able to edit the boxes in css
@@ -142,5 +145,10 @@ function phraseOut(){
         return 'When you play the game of thrones, you win or you die. Try again?';
     }
 }
-
-$(beginQuiz);
+function start(){
+    beginQuiz();
+    questionCheck()
+    createSelections();
+    createSelections();
+}
+$(start);

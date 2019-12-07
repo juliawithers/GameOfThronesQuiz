@@ -39,43 +39,43 @@ const STORE=[
             "Vhagar"],
         answer: "Vhagar"},
     {
-        question: "How many actors portrayed The Mountain?"
-        selections:[
+        question: "How many actors portrayed The Mountain?",
+        selections: [
             "One",
             "Two",
             "Three",
-            "Four"]
+            "Four"],
         answer: "Three"},
     {
-        question: "What explosive substance was utilized in the Battle of Blackwater Bay?"
-        selections:[
+        question: "What explosive substance was utilized in the Battle of Blackwater Bay?",
+        selections: [
             "Greek fire",
             "Wildfire",
             "Dynamite",
-            "Green fire"]
-        answer: "Wild Fire"},
+            "Green fire"],
+        answer: "Wildfire"},
     {
-        question: "Besides dragonglass what other material can defeat a White Walker?"
+        question: "Besides dragonglass what other material can defeat a White Walker?",
         selections:[
             "Wildfire",
             "Jon Snows piercing gaze",
             "Valyrian Steel",
-            "Water"]
+            "Water"],
         answer: "Valyrian Steel"},
     {    
-        question: "Which god does Arya briefly serve in Esos?"
+        question: "Which god does Arya briefly serve in Esos?",
         selections:[
             "The God of Death/The Many-Faced God",
             "The Mother",
-            "The Soldier",
-            "The Old Gods"]
+            "The Warrior",
+            "The Old Gods"],
         answer: "The God of Death/The Many-Faced God"},
     {
-        question: "Who did not help conspire to kill Joffrey Baratheon?"
+        question: "Who did not help conspire to kill Joffrey Baratheon?",
         selections:[
             "Sansa",
             "Lady Onella",
-            "Littlefinger"]
+            "Littlefinger"],
         answer: "Sansa"}
     
 ];
