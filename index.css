@@ -16,11 +16,15 @@ body{
 }
 h1{
     text-align: center;
+    font-size: 110%;
+}
+h2{
+    font-size: 90%;
 }
 main{
     margin-left:auto;
     margin-right: auto;
-    width: 45%;
+    width: 90%;
     border:  4px solid black;
     border-radius: 5px;
     background-color:  rgb(185, 185, 185,0.90);
@@ -35,18 +39,19 @@ main{
     transform: translate(-50%,-50%);
 }
 section{
-    margin: 15px auto 15px auto;   
+    margin: 0px; 
 }
 button{
+    cursor: pointer;
     font-family: 'Cinzel', serif;
     margin: 10px auto 10px auto;
-    font-size: 115%;
+    font-size: 90%;
+    font-weight: bold;
     border-radius: 3px;
     box-shadow: 2px 2px 5px
+    /*  */
 }
-section{
-    margin: 0px;
-}
+
 fieldset>h1{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -56,34 +61,34 @@ fieldset{
     border: none;
 }
 .radio{
-    font-size: 115%;
+    font-size: 90%;
+    cursor: pointer;
 }
 
 p.question-count{
     display: inline-block;
-    padding-right: 10%; 
-    padding-left: 10%; 
+    margin: 2px 5px 2px auto;
     
 }
 p.score{
     display: inline-block;
-    padding-right: 10%; 
-    padding-left: 10%; 
+    margin: 2px auto 2px 5px;
  
 }
 p.final-score{
-    font-size: 115%;
+    font-size: 90%;
 }
 .options{
-    padding-right: 20%;
-    padding-left: 20%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-weight: bold;
 }
 
 .options>span{
     display: block;
     padding: 3px;
     text-align: center;
-    font-size: 115%;
+    font-size: 90%;
 }
 .correctAnswer{
     border: 2px solid green;
@@ -96,43 +101,54 @@ p.final-score{
     box-shadow: 2px 2px 5px red;
 }
 .scoreUpdate{
-    font-size: 115%;
     background-color: black;
     color: white;
+    font-weight: bold;
+    font-size: 80%;
+    margin: 0px auto 0px auto;
 }
-@media screen and (max-width: 600px){
+@media screen and (min-width: 620px){
     main{
-        width: 90%;
+        width: 60%;
     }
     p.question-count{
-        padding: auto 5px auto 5px;
-        margin: 2px auto 2px auto;
+        padding-right: 10%; 
+        padding-left: 10%;
     }
     p.score{
-        padding: auto 5px auto 5px;
-        margin: 2px auto 2px auto;
+        padding-right: 10%; 
+        padding-left: 10%;
     }
     h1{
-        font-size: 90%;
+        font-size: 2em;
     }
     h2{
-        font-size: 80%;
+        font-size: 1.5em;
     }
     button {
-        font-size: 90%;
+        font-size: 115%;
     }
     .radio{
-        font-size: 90%;
+        font-size: 115%;
     }
     .scoreUpdate{
-        font-size: 80%;
-        margin: 0px auto 0px auto;
+        font-size: 115%;
+        margin: auto;
     }
     .options>span{
-        font-size: 90%;
+        font-size: 115%;
     }
     .options{
-        padding-right: 5%;
-        padding-left: 5%;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+    section{
+        margin: 15px 10% 15px 10%; 
     }
 }
+@media screen and (min-width: 750px){
+    main{
+        width: 700px;
+    }
+}
+
