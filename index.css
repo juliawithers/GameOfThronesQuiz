@@ -77,6 +77,7 @@ p.score{
 }
 p.final-score{
     font-size: 90%;
+    font-weight: bold;
 }
 .options{
     padding-right: 5%;
@@ -144,6 +145,10 @@ p.final-score{
     }
     section{
         margin: 15px 10% 15px 10%; 
+    }
+    p.final-score{
+        font-size:115%;
+        font-weight: bold;
     }
 }
 @media screen and (min-width: 750px){
