@@ -72,6 +72,9 @@ p.score{
     padding-left: 10%; 
  
 }
+p.final-score{
+    font-size: 115%;
+}
 .options{
     padding-right: 20%;
     padding-left: 20%;

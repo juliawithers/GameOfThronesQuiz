@@ -121,7 +121,7 @@ function loadFinalPage(){
     saying = phraseOut();
     $('.scoreUpdate').html(saying);
     const finalPageHTML = 
-    `<p>Your Score is ${score}/${STORE.length}</p>
+    `<p class = "final-score">Your Score is ${score}/${STORE.length}</p>
     <button class ="restart">RESTART QUIZ</button>`;
     $('section').html(finalPageHTML);
     curIndex = 0;
