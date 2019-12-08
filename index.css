@@ -98,7 +98,7 @@ p.score{
     background-color: black;
     color: white;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     main{
         width: 90%;
     }
@@ -108,17 +108,22 @@ p.score{
     p.score{
         padding: auto 5px auto 5px;
     }
-
-    button {
+    h1{
+        font-size: 90%;
+    }
+    h2{
         font-size: 80%;
     }
+    button {
+        font-size: 90%;
+    }
     .radio{
-        font-size: 80%;
+        font-size: 90%;
     }
     .scoreUpdate{
         font-size: 80%;
     }
     .options>span{
-        font-size: 80%;
+        font-size: 90%;
     }
 }
